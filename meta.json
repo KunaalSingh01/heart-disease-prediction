@@ -1,0 +1,1 @@
+{"features": ["age_yr", "ap_hi", "ap_lo", "cholesterol", "BMI"], "ensemble_weights": {"xgb": 0.7, "logreg": 0.3}}
