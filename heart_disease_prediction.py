@@ -17,7 +17,7 @@ import xgboost as xgb
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("/content/cardio_train.csv")
+df = pd.read_csv("cardio_train.csv")
 print(df.head(7))
 
 print("\nMissing values before drop: \n", df.isnull().sum())
@@ -111,7 +111,7 @@ plt.title('ROC Curve — Cardiovascular Risk Ensemble Model')
 
 # AUC annotation in top-left (axes coordinates)
 plt.text(0.02, 0.98, f'AUC = {auc:.5f}', transform=plt.gca().transAxes,
-         fontsize=10, verticalalignment='top', bbox=dict(boxstyle="round", fc="white", ec="0.5"))
+        fontsize=10, verticalalignment='top', bbox=dict(boxstyle="round", fc="white", ec="0.5"))
 
 plt.legend(loc='lower right')
 plt.grid(alpha=0.3)
